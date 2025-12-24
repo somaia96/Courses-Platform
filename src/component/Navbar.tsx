@@ -1,3 +1,4 @@
+import { LaptopMinimal } from "lucide-react";
 import { getLoggedInFun, setLoggedInFun } from "../utils/isLoggedInFun";
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
@@ -11,11 +12,11 @@ const Navbar = () => {
         setIsLoggedIn(false)
     }
     return (
-        <nav className="bg-light-blue-800 py-3 text-white">
+        <nav className="bg-blue-gray-900 py-3 text-white">
             <div className="container items-center justify-between flex">
             <div className="flex gap-16">
                 <span className="text-3xl font-semibold">
-                    <Link to="/">💻 COURSY</Link>
+                    <Link className="flex items-center gap-2" to="/"><LaptopMinimal size={30} /> COURSY</Link>
                 </span>
                 <ul className="flex items-center gap-5">
                     <li><NavLink to="/">Home</NavLink></li>

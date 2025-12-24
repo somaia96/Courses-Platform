@@ -13,14 +13,13 @@ import Layout from "../component/Layout";
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-        <Route path="login" element={<LoginPage />} />
-
+      <Route path="login" element={<LoginPage />} errorElement={<NotFoundPage />} />
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="cart" element={<CartPage />} />
         <Route path="courses" >
           <Route index element={<CoursesPage />} />
-          <Route path=":id" element={<CourseDetailsPage />} />
+          <Route path=":id" element={<CourseDetailsPage />} errorElement={<NotFoundPage />} />
         </Route>
       </Route>
       <Route path="*" element={<NotFoundPage />} />
