@@ -17,7 +17,7 @@ const CardCourse = ({ data }: { data: ICourses }) => {
             <p className="p-3 text-sm flex gap-1"><span className="gap-x-0.5 flex items-center font-semibold text-gray-800"><CircleDollarSign color="blue" size={15} /> Price: </span>{data.price}$</p>
             <div className="flex text-white space-x-3 p-3 text-xs">
                 <button className="bg-blue-900 p-2 rounded-md" onClick={() => handleViewDetails(data.id)}>View Details</button>
-                <AddToCartBTN />
+                <AddToCartBTN item={data} />
             </div>
         </div>
     )

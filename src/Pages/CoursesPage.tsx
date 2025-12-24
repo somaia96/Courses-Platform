@@ -5,7 +5,6 @@ import Pagination from "../component/Pagination"
 
 const CoursesPage = () => {
     const [page, setPage] = useState(0)
-
     return (
         <div className="flex flex-col justify-between">
             <div className="grid gap-x-10 gap-y-5 grid-cols-1  sm:grid-cols-2 lg:grid-cols-3">
