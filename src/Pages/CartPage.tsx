@@ -24,7 +24,7 @@ const CartPage = () => {
 
                 {myCart.map((course:ICourses) => <div key={course.id}
                     className="bg-gray-200 shadow-lg p-5 border-b-2 
-                    border-b-gray-400/60 flex items-center gap-10 text-gray-900" >
+                    border-b-gray-400/60 rounded-lg flex items-center gap-10 text-gray-900" >
                     <div className="w-1/3">
                         <h2 className="text-black font-semibold text-xl flex gap-3 items-center">
                             {course.title} <GraduationCap size={50} />

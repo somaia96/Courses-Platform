@@ -13,7 +13,7 @@ const Navbar = () => {
         setIsLoggedIn(false)
     }
     return (
-        <nav className="bg-blue-gray-900 py-3 text-white">
+        <nav className="shadow-lg bg-blue-gray-900 py-3 text-white">
             <div className="container flex items-center justify-between">
                 <div className="flex gap-16 items-center">
                     <span className="text-3xl font-semibold">
