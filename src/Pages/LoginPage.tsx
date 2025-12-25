@@ -1,3 +1,4 @@
+import BTN from "../component/BTN"
 import Input from "../component/Input"
 import { setLoggedInFun } from "../utils/isLoggedInFun"
 import { useState } from "react"
@@ -19,12 +20,14 @@ const LoginPage = () => {
     }
     return (
         <div className="flex justify-center h-screen items-center">
-            <form onSubmit={handleSubmit} className="flex w-3/4 sm:w-1/2 lg:w-1/3 rounded-md p-10 flex-col bg-black/10 gap-5 text- shadow-lg">
+            <form onSubmit={handleSubmit} className="flex w-3/4 sm:w-1/2 lg:w-1/3 rounded-md p-10 flex-col bg-gray-500/10 gap-5 text- shadow-lg">
                 <h2 className="text-center text-5xl font-[cursive] text-blue-gray-900 font-semibold mb-3">Login</h2>
                 <Input value={email} name="email" placeholder="example@gmail.com" setter={setEmail} />
                 <Input value={password} name="password" placeholder="Enter Your Password" setter={setPassword} />
-                <button className="bg-blue-gray-800/80 text-white py-1 rounded-md text-lg">{isLoading ? "Loading..." : "LogIn"}</button>
-            </form>
+                <BTN>
+                    {isLoading ? "Loading..." : "LogIn"}
+                </BTN>
+           </form>
         </div>
     )
 }
