@@ -13,3 +13,14 @@ export interface ICourses{
         lessonsCount:number,
         level:"Beginner" | "Intermediate"|"Advanced",
 }
+
+export interface ITestimonials {
+        id: number;
+        name: string;
+        role: string;
+        company: string;
+        avatar: string;
+        rating: number;
+        comment: string;
+        date: string;
+}

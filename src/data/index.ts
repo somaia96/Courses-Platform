@@ -1,4 +1,4 @@
-import { ICourses } from "../interfaces";
+import { ICourses, ITestimonials } from "../interfaces";
 
 export const Courses:ICourses[] =[
     {
@@ -285,5 +285,58 @@ export const Courses:ICourses[] =[
     instructor: "Cody Dev",
     level: "Advanced",
     fullDescription: "Learn the latest version of Next.js, understanding the difference between SSR and CSR and how to optimize web performance."
+  }
+];
+
+export const testimonials:ITestimonials[] = [
+  {
+    id: 1,
+    name: "Sarah Jenkins",
+    role: "Marketing Director",
+    company: "Luminal Tech",
+    avatar: "https://i.pravatar.cc/150?u=sarah",
+    rating: 5,
+    comment: "Working with this team was a game-changer for our brand. The attention to detail and the seamless communication made the entire process stress-free.",
+    date: "2024-11-12"
+  },
+  {
+    id: 2,
+    name: "Marcus Chen",
+    role: "Founder & CEO",
+    company: "Apex Dynamics",
+    avatar: "https://i.pravatar.cc/150?u=marcus",
+    rating: 5,
+    comment: "The ROI we saw within the first three months exceeded our expectations. Highly professional and truly experts in their field.",
+    date: "2024-12-05"
+  },
+  {
+    id: 3,
+    name: "Elena Rodriguez",
+    role: "Product Manager",
+    company: "Veloce Apps",
+    avatar: "https://i.pravatar.cc/150?u=elena",
+    rating: 4,
+    comment: "Solid experience overall. The final delivery was top-notch, though I would have appreciated a bit more frequency in the weekly updates.",
+    date: "2025-01-15"
+  },
+  {
+    id: 4,
+    name: "David Thompson",
+    role: "Senior Developer",
+    company: "CloudStream",
+    avatar: "https://i.pravatar.cc/150?u=david",
+    rating: 5,
+    comment: "Their technical implementation is the cleanest I’ve seen. It’s rare to find a partner that understands both design and scalable architecture so well.",
+    date: "2025-02-20"
+  },
+  {
+    id: 5,
+    name: "Jessica Blair",
+    role: "E-commerce Owner",
+    company: "Bloom & Co",
+    avatar: "https://i.pravatar.cc/150?u=jessica",
+    rating: 5,
+    comment: "I was hesitant to outsource our design, but they captured our brand voice perfectly. My customers have been raving about the new look!",
+    date: "2025-03-02"
   }
 ];
