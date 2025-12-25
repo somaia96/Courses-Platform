@@ -1,4 +1,4 @@
-import about from "../../assets/d.png"
+import about from "../../assets/about-section.png"
 const AboutSection = () => {
     return (
         <section className="my-20 bg-gray-50/70 py-20">

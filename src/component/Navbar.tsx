@@ -7,9 +7,7 @@ import NavLinkList from "./NavLinkList";
 const Navbar = () => {
     const [isLoggedIn, setIsLoggedIn] = useState<boolean>(getLoggedInFun())
     const [isHidden, setIsHidden] = useState<boolean>(true)
-
     const handleLogIn = (isLoggedIn: boolean) => {
-        
         if (!isLoggedIn) return;
         setLoggedInFun(false);
         setIsLoggedIn(false)

@@ -10,6 +10,7 @@ import CoursesPage from "../Pages/CoursesPage";
 import CourseDetailsPage from "../Pages/CourseDetailsPage";
 import LoginPage from "../Pages/LoginPage";
 import Layout from "../component/Layout";
+
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <>

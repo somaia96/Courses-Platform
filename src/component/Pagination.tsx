@@ -1,6 +1,6 @@
 const Pagination = ({ total, setPage }: { total: number, setPage: (val: number) => void }) => {
     return (
-        <div className="flex absolute left-1/2 bottom-16 -translate-x-1/2 gap-3 items-center justify-center">
+        <div className="flex my-5 gap-3 items-center justify-center">
             {Array.from({ length: Math.ceil(total / 6) }, (_, i) => {
                 return <span key={i}
                     onClick={() => setPage(i)}

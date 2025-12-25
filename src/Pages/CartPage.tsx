@@ -3,12 +3,10 @@ import { getLoggedInFun } from "../utils/isLoggedInFun"
 import { DollarSign, GraduationCap, X } from "lucide-react"
 import { deleteFromCart } from "../utils/deleteFromCart";
 import { useState } from "react";
+import { getCartCourses } from "../utils/getCartCourses";
 
 const CartPage = () => {
-
-    let myCourses = JSON.parse(localStorage.getItem("cart")!) || [];
-    const [myCart, setMyCart] = useState(myCourses)
-    console.log(myCart);
+    const [myCart, setMyCart] = useState(getCartCourses())
 
     const totalPrice = (array: ICourses[]) => {
         return array.reduce((res, cur) => cur.price + res, 0)
@@ -16,10 +14,10 @@ const CartPage = () => {
     return (
         <div className="container">
             <h1 className="text-3xl md:text-5xl font-semibold mb-10">Shopping Cart</h1>
-            {getLoggedInFun() ? (myCourses.length ? <div className="flex flex-col gap-5">
+            {getLoggedInFun() ? (myCart.length ? <div className="flex flex-col gap-5">
                 <div className="flex gap-5 font-semibold">
-                    <h2>Your Courses: {myCourses.length} Course</h2>
-                    <p>Total Price: {totalPrice(myCourses)}$</p>
+                    <h2>Your Courses: {myCart.length} Course</h2>
+                    <p>Total Price: {totalPrice(myCart)}$</p>
                 </div>
 
                 {myCart.map((course: ICourses) => <div key={course.id}
